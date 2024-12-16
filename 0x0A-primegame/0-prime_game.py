@@ -9,6 +9,9 @@ def isWinner(x, nums):
         x (_type_): _description_
         nums (_type_): _description_
     """
+    if x <= 0:
+        return None
+
     def sieve(n):
         primes = [0, 0] + [1] * (n - 1)
         p = 2
